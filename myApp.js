@@ -1,7 +1,11 @@
 let express = require('express');
 let app = express();
 
-console.log("Hello World");
+app.use('/', (req, res) => {
+    res.send("hello world");
+    console.log("Hello World");
+})
+
 
 
 
